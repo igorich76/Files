@@ -1,0 +1,9 @@
+##
+var fale: Text;//переменная для работы с файлом и далее связывание переменной с файлом
+Assign(fale,'C:\Users\igori\OneDrive\Рабочий стол\ПРОЕКТЫ\ФАЙЛЫ\f1.txt');
+Rewrite(fale); //ткрываем файл для записи
+Println(fale,'Привет, мир! Я работаю с файлом!');
+Println(fale,'Меня зовут Игорь.');
+Println(fale,2+2);
+Println(fale,'Файл f1.txt');
+Close(fale);
