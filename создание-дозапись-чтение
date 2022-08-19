@@ -1,0 +1,29 @@
+##
+var f: Text;
+Assign(f,'D:\proba.txt');
+Rewrite(f);
+Println(f,'Какой-то текст');
+Println(f,'Ещё какой-то текст');
+Close(f);
+
+/////////////////////////
+##
+var f: Text;
+Assign(f,'D:\proba.txt');
+Append(f);
+Println(f,'Решим пример=', 10000+555555);
+Close(f);
+
+/////////////////////////
+##
+var f: Text;
+var a,b,c: string;
+Assign(f,'D:\proba.txt');
+Reset(f);
+Readln(f,a);
+Readln(f,b);
+Readln(f,c);
+Close(f);
+PrintLn(a);
+PrintLn(b);
+PrintLn(c);
