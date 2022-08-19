@@ -1,0 +1,14 @@
+##
+var f1: Text;
+var a,b,c,d: string;
+Assign(f1,'C:\Users\igori\OneDrive\Рабочий стол\ПРОЕКТЫ\ФАЙЛЫ\proba.txt');
+Reset(f1);
+Readln(f1,a); //читаем по строкам
+Readln(f1,b);
+Readln(f1,c);
+Readln(f1,d);
+Close(f1);
+Println(a); //выводим по строкам
+Println(b);
+Println(c);
+Println(d);
