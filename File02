@@ -1,0 +1,15 @@
+uses PT4;
+begin
+  Task('File2');
+  var imya_f := ReadlnString('');
+  var N := ReadlnInteger('Введите N >>');
+  var f: file of integer; 
+  Assign(f,imya_f);
+  Rewrite(f);  
+  var a := 1;   
+  for var i:=1 to N do begin
+    a := i*2;
+    Write(f,a); // ментор подсказал, можно и f.Write(a). Но ни в коем случае не Print(f,a)!!!
+  end;  
+  Close(f);
+end.
